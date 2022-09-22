@@ -1,4 +1,5 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -6,6 +7,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.Duration;
 
 public class Testim {
@@ -15,12 +19,17 @@ public class Testim {
         WebDriverManager.chromedriver().setup();
     }
 
-
     @Test
     public void threadlessLoginNscroll() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get(Helper.THREADLESS_URL); //entering the site
         driver.manage().window().maximize();
+        Thread.sleep(1000);
+        driver.manage().window().minimize();
+        Thread.sleep(1000);
+        driver.manage().window().fullscreen();
+        Thread.sleep(1000);
+        driver.manage().window().maximize(); //resize
         Thread.sleep(2000);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         WebElement loginbtn = //log in with pre-made user
@@ -52,9 +61,51 @@ public class Testim {
         Thread.sleep(2000);
         jse.executeScript("window.scrollBy(0,-(document.body.scrollHeight))");
     }
-    @Test
-    public void testTwo() {
 
+    @Test
+    public void heroTesting() throws InterruptedException {
+        WebDriver driver = new ChromeDriver();
+        driver.get(Helper.HERO_URL); //entering the site
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("alert('Hello i am an alert, please dismiss me')");
+        Thread.sleep(2000);
+        driver.switchTo().alert().dismiss();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebElement checkboxXpath = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(Helper.CHECKBOX_XPATH))); //checkboxes
+        checkboxXpath.click();
+        if (driver.getCurrentUrl().equals(Helper.CHECKBOX_URL)) {
+            WebElement checkOne = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(Helper.CHECKBOX_ONE)));
+            WebElement checkTwo = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(Helper.CHECKBOX_TWO)));
+            checkOne.click();
+            Thread.sleep(1000);
+            checkTwo.click();
+            Thread.sleep(1000);
+            checkTwo.click();
+            Thread.sleep(1000);
+            System.out.println("both checkboxes are selected = " + "checkbox one: " + checkOne.isSelected() + ", checkbox two: " + checkTwo.isSelected());
+        } else {
+            System.out.println("wrong URL :'((");
+        }
+
+    }
+
+    @Test
+    public void wikipedia() throws IOException {
+        WebDriver driver = new ChromeDriver();
+        driver.get(Helper.MUSEWIKIURL);
+        driver.manage().window().maximize();
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("window.scrollBy(0,1700)");
+        File newFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE); //taking the screenshot
+        File filePath = new File(Helper.FOLDERPATH + "wikiPhoto" + Helper.JPG);
+        FileUtils.copyFile(newFile, filePath);
+        WebElement wikiText = driver.findElement(By.xpath(Helper.MUSETEXTPARAGRAPHxPATH));
+        File textFile = new File(Helper.FOLDERPATH + "WikiParagraphText" + Helper.TXT); //copy the text into a txt folder
+        FileWriter writer = new FileWriter(textFile);
+        writer.write(wikiText.getText());
+        writer.close();
     }
 }
 

@@ -49,12 +49,12 @@
       <recent name="C:\Users\nitzc\IdeaProjects\SeleniumFinalProject\res" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Testim.threadlessLoginNscroll">
-    <configuration name="Testim.testOne" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Testim.heroTesting">
+    <configuration name="Testim.heroTesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFinalProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Testim" />
-      <option name="METHOD_NAME" value="testOne" />
+      <option name="METHOD_NAME" value="heroTesting" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -86,11 +86,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Testim.threadlessTwo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFinalProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Testim" />
+      <option name="METHOD_NAME" value="threadlessTwo" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testim.wikipedia" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFinalProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Testim" />
+      <option name="METHOD_NAME" value="wikipedia" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Testim.heroTesting" />
+        <item itemvalue="TestNG.Testim.threadlessTwo" />
+        <item itemvalue="TestNG.Testim.wikipedia" />
         <item itemvalue="TestNG.Testim.threadlessLoginNscroll" />
         <item itemvalue="TestNG.Testim.threadlessLogin" />
-        <item itemvalue="TestNG.Testim.testOne" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663263338054</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Second commit, first test">
+      <created>1663527987711</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663527987712</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +180,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="Second commit, first test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit, first test" />
   </component>
 </project>
