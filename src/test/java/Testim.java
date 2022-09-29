@@ -113,7 +113,7 @@ public class Testim {
         actions.contextClick(wait.until(ExpectedConditions.presenceOfElementLocated(By.id(Helper.CONTEXTCLICK_ID)))).perform();
         Thread.sleep(2000);
         driver.navigate().to(Helper.CONTEXTCLICKGIF_URL);
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         driver.navigate().back();
         Assert.assertEquals(driver.getCurrentUrl(), Helper.DEMO_URL);
     }

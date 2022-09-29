@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d7472fd2-08be-474c-bd99-a7653e1d9f7f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Testim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testim.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,10 +111,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.Testim.actionsNassert" />
+        <item itemvalue="TestNG.Testim.wikipedia" />
         <item itemvalue="TestNG.Testim.heroTesting" />
         <item itemvalue="TestNG.Testim.threadlessLoginNscroll" />
         <item itemvalue="TestNG.Testim.threadlessTwo" />
-        <item itemvalue="TestNG.Testim.wikipedia" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663869727030</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Last commit?">
+      <created>1664464053926</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664464053926</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +194,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="Second commit, first test" />
     <MESSAGE value="Third commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Third commit" />
+    <MESSAGE value="Last commit?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last commit?" />
   </component>
 </project>
