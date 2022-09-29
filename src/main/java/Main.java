@@ -20,5 +20,5 @@ public class Main {
 
     //Add an excel form that shortly describes each test (in english)
 
-    //find element, click, sendkeys, select dropdown, checkbox, get text, scroll, resize, assert
+    //find element, click, sendkeys, select dropdown, checkbox, get text, scroll, resize, assert, actions, screenshot
 }

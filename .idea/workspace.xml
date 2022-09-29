@@ -49,12 +49,12 @@
       <recent name="C:\Users\nitzc\IdeaProjects\SeleniumFinalProject\res" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Testim.heroTesting">
-    <configuration name="Testim.heroTesting" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Testim.actionsNassert">
+    <configuration name="Testim.actionsNassert" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFinalProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Testim" />
-      <option name="METHOD_NAME" value="heroTesting" />
+      <option name="METHOD_NAME" value="actionsNassert" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -62,11 +62,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Testim.threadlessLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Testim.heroTesting" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFinalProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Testim" />
-      <option name="METHOD_NAME" value="threadlessLogin" />
+      <option name="METHOD_NAME" value="heroTesting" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -112,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Testim.actionsNassert" />
         <item itemvalue="TestNG.Testim.heroTesting" />
+        <item itemvalue="TestNG.Testim.threadlessLoginNscroll" />
         <item itemvalue="TestNG.Testim.threadlessTwo" />
         <item itemvalue="TestNG.Testim.wikipedia" />
-        <item itemvalue="TestNG.Testim.threadlessLoginNscroll" />
-        <item itemvalue="TestNG.Testim.threadlessLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663527987712</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Third commit">
+      <created>1663869727030</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663869727030</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +188,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="Second commit, first test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit, first test" />
+    <MESSAGE value="Third commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Third commit" />
   </component>
 </project>

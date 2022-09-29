@@ -8,11 +8,20 @@ public class Helper {
     }
 
     public static final String THREADLESS_URL = "https://www.threadless.com/";
+    public static final String DEMO_URL = "https://demoqa.com/buttons";
+    public static final String DOUBLECLICK_ID = "doubleClickBtn";
+    public static final String DOUBLECLICKGIF_URL = "https://giphy.com/gifs/princejks-click-jks-jangkeunsuk-vtFg0E2EnGu9fOeXP6";
+    public static final String CONTEXTCLICK_ID = "rightClickBtn";
+    public static final String CONTEXTCLICKGIF_URL = "https://giphy.com/gifs/LogitechG-gaming-shroud-logitech-g-ng8qPvvTLP57D2cQwZ";
+
     public static final String HERO_URL = "https://the-internet.herokuapp.com/";
+    public static final String HEROMENU_URL = "https://the-internet.herokuapp.com/";
+    public static final String HERODROPDOWN_XPATH = "//*[@id=\"content\"]/ul/li[11]/a";
     public static final String CHECKBOX_XPATH = "//*[@id=\"content\"]/ul/li[6]/a";
     public static final String CHECKBOX_URL = "https://the-internet.herokuapp.com/checkboxes";
     public static final String CHECKBOX_ONE = "//*[@id=\"checkboxes\"]/input[1]";
     public static final String CHECKBOX_TWO = "//*[@id=\"checkboxes\"]/input[2]";
+    public static final String DROPDOWN_ID = "dropdown";
     public static final String THREADLESS_MATT_URL = "https://www.threadless.com/shop/@papibulldozer/design/matt-bellamy-portrait/mens/t-shirt/regular?color=white#m";
     public static final String THREADLESS_LOGINXPATH = "/html/body/nav/header/ul/li[2]/a";
     public static final String THREADLESS_LOGINFIELDUSER_ID = "id_username";

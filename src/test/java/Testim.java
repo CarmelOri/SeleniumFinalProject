@@ -2,8 +2,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -83,12 +86,36 @@ public class Testim {
             checkTwo.click();
             Thread.sleep(1000);
             checkTwo.click();
-            Thread.sleep(1000);
+            Thread.sleep(3000);
             System.out.println("both checkboxes are selected = " + "checkbox one: " + checkOne.isSelected() + ", checkbox two: " + checkTwo.isSelected());
         } else {
             System.out.println("wrong URL :'((");
         }
-
+        driver.navigate().to(Helper.HEROMENU_URL);
+        Thread.sleep(2000);
+        WebElement dropdownXpath = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(Helper.HERODROPDOWN_XPATH)));
+        dropdownXpath.click();
+        Select dropdown = new Select(driver.findElement(By.id(Helper.DROPDOWN_ID)));
+        dropdown.selectByIndex(2);
+    }
+    @Test
+    public void actionsNassert() throws InterruptedException {
+        WebDriver driver = new ChromeDriver();
+        driver.get(Helper.DEMO_URL);
+        driver.manage().window().maximize();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        Actions actions = new Actions(driver);
+        actions.doubleClick(wait.until(ExpectedConditions.presenceOfElementLocated(By.id(Helper.DOUBLECLICK_ID)))).perform();
+        Thread.sleep(2000);
+        driver.navigate().to(Helper.DOUBLECLICKGIF_URL);
+        Thread.sleep(2000);
+        driver.navigate().back();
+        actions.contextClick(wait.until(ExpectedConditions.presenceOfElementLocated(By.id(Helper.CONTEXTCLICK_ID)))).perform();
+        Thread.sleep(2000);
+        driver.navigate().to(Helper.CONTEXTCLICKGIF_URL);
+        Thread.sleep(2000);
+        driver.navigate().back();
+        Assert.assertEquals(driver.getCurrentUrl(), Helper.DEMO_URL);
     }
 
     @Test
